@@ -120,13 +120,6 @@ Response includes `match_score`, `matched_skills`, `missing_skills`, `detailed_s
 - If spaCy errors occur, ensure `en_core_web_sm` is downloaded into the same env used to run the backend.
 - If Streamlit fails to start with starlette-related import errors, run the frontend from its own venv (`frontend/.venv`) as described above.
 
-## Notes & Next Steps
-
-- I pinned `starlette==0.27.0` in `backend/requirements.txt` to avoid incompatibilities with the installed FastAPI version. Keep an eye on dependency updates.
-- If you want, I can:
-  - Add a `Makefile` or `scripts/` helpers for Windows to simplify run commands.
-  - Add a small test fixture or sample resume PDF + sample JD for quick demoing.
-
 ---
 
 Developed and validated locally — FastAPI backend at `http://127.0.0.1:8000` and Streamlit frontend at `http://localhost:8501`.
